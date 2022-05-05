@@ -3,5 +3,6 @@
   Priority: "High",
   Severity: "Medium",
   STR: "1. Create new file",
-  Assigned: "To me"
+  Assigned: "To me",
+  Version: "3.23"
 }
