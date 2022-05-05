@@ -1,5 +1,8 @@
-<message>
-    <warning>
-         Hello World
-    </warning>
-</message>
+<person>
+    <name>
+         Artur
+    </name>
+    <numsPets>
+         0
+    </numsPets>
+</person>
