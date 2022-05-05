@@ -1,0 +1,5 @@
+idea: hidden place button
+Priority: High
+Severity: Medium
+Str: "1. Create new file"
+Assigned: To me
