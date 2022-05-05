@@ -1,0 +1,4 @@
+person_name: Artur
+age: 30
+numsPets: 0
+
