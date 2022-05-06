@@ -1,0 +1,61 @@
+HW_1. The first part
+Linux terminal (GitBash) commands
+
+1) Посмотреть где я - pwd
+2) Создать папку - mkdir dir_1
+3) Зайти в папку cd dir_1
+4) Создать 3 папки mkdir -p dir_2 dir_3 dir_4 
+5) Зайти в любоую папку cd dir_2
+6) Создать 5 файлов (3 txt, 2 json) touch file1.txt file2.txt file3.txt file4.json file5.json
+7) Создать 3 папки mkdir -p dir_5 dir_6 dir_7
+8. Вывести список содержимого папки ls -la
+9) + Открыть любой txt файл cat file1.txt либо vim file1.txt
+10) + написать туда что-нибудь, любой текст. cat >> file1.txt
+11) + сохранить и выйти. ctrl + c / esc + :wq
+12) Выйти из папки на уровень выше cd ..
+—
+13) переместить любые 2 файла, которые вы создали, в любую другую папку. mv file1.txt file2.txt dir_2
+14) скопировать любые 2 файла, которые вы создали, в любую другую папку. cp file3.txt file4.json dir_3
+15) Найти файл по имени find . -name "file1.txt"
+16) просмотреть содержимое в реальном времени (команда grep) изучите как она работает. grep '*' file1.txt
+17) вывести несколько первых строк из текстового файла head -n2 file3.txt
+18) вывести несколько последних строк из текстового файла tail -n2 file3.txt
+19) просмотреть содержимое длинного файла (команда less) изучите как она работает. less file3.txt
+20) вывести дату и время date
+=========
+
+Задание *
+1) Отправить http запрос на сервер. http://162.55.220.72:5005/terminal-hw-request 
+curl http://162.55.220.72:5005/terminal-hw-request
+Task 1:
+curl "http://162.55.220.72:5005/get_method?name=Gendalf&age=900"
+2) Написать скрипт который выполнит автоматически пункты 3, 4, 5, 6, 7, 8, 13
+
+nano myscript1.sh
+
+#!/bin/bash
+echo "Cd directory"
+cd dir_1
+
+echo "make directory 3 dir " 
+mkdir -p dir_2 dir_3 dir_4
+
+echo "Cd directory"
+cd dir_2
+
+echo "touch 5 files"
+touch file1.txt file2.txt file3.txt file4.json file5.json
+
+echo "make directory 3 dir"
+mkdir -p dir_5 dir_6 dir_7
+
+echo "local storage"
+ls -la
+
+echo "move 2 file file1.txt file2.txt"
+mv file1.txt file2.txt dir_5
+
+ctrl+o
+ctrl+x
+
+./myscript.sh
